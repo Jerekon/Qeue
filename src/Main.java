@@ -8,8 +8,7 @@ public class Main {
     public static int[] prices = {50, 14, 80};
 
     public static void main(String[] args) throws IOException {
-        System.out.println("JDCP-6 + Евгений Орлов + ДЗ-23 + " +
-                "Потоки ввода-вывода. Работа с файлами. Сериализация");
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Задача 1\n");
         Basket basket;
@@ -43,7 +42,7 @@ public class Main {
                     int productNumber = Integer.parseInt(parts[0]) - 1;//номер продукта
                     int productCount = Integer.parseInt(parts[1]);//штук продукта
                     basket.addToCart(productNumber, productCount);// ушло в корзину
-                    basket.saveTxt(textFileMain);// корзина ушла в файл
+                    basket.saveTxt(textFileMain)
                 } else
                     System.out.println(String.format("Количество товара не может быть отрицательным" +
                             " '%s'", Integer.parseInt(parts[1])));
