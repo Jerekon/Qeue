@@ -1,0 +1,16 @@
+Index: src/Person.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Person.java b/src/Basket.java
+rename from src/Person.java
+rename to src/Basket.java
+--- a/src/Person.java	(revision c3cb20730a5e92b664db77f0993e8b0afbaff09b)
++++ b/src/Basket.java	(date 1683105192413)
+@@ -30,4 +30,3 @@
+         if (tickets < 0) return;
+         this.tickets = tickets;
+     }
+-}
+\ No newline at end of file
